@@ -1,0 +1,35 @@
+{
+    "name": "omadonex/vaac",
+    "description": "Laravel user's accounts activation and verification by E-mail and mobile phone",
+    "license": "MIT",
+    "keywords": ["laravel", "account", "activation", "verification", "email", "mobile"],
+    "authors": [
+        {
+            "name": "Yuriy Arkhipov",
+            "email": "omadonex@yandex.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Omadonex\\Vaac\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/notifications": "5.5.*",
+        "illuminate/routing": "5.5.*",
+        "illuminate/support": "5.5.*",
+        "omadonex/support": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Omadonex\\Vaac\\Providers\\VaacServiceProvider"
+            ],
+            "aliases": {
+                "Vaac": "Omadonex\\Vaac\\VaacService"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
